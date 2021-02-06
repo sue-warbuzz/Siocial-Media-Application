@@ -1,0 +1,81 @@
+
+.layout-sidebar {
+    background-color: aquamarine;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.jj {
+    align-items: c;
+}
+body{
+    background: rgb(53, 20, 114);
+    background-image: linear-gradient(to top, rgb(214, 125, 125), rgb(121, 68, 121));
+    min-height: 200vh;
+}
+
+.navbar{
+    position: fixed;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+    justify-content: space-between;
+    
+    padding: 20px 50px;
+}
+.logo_container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+#logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: 0.8s;
+}
+.logo_design {
+    color: rgb(240, 229, 229);
+    position: relative;
+    margin: 0 15px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    transition: 0.9s;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+.logo_design:hover {
+    color: rgb(88, 10, 27);
+    transition: all 0.3 ease;
+}
+

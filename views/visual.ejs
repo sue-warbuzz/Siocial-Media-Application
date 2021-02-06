@@ -1,0 +1,39 @@
+<!-- this will contain full-width as the layout html and the rest will be the chatting part -->
+<header>
+  <a href="#" class="logo"><span>.</span></a>
+  <ul class="navigation">
+      <li><a href="/index">Home</a></li>
+      <li><a href="/cs">Technology</a></li>
+  </ul>
+</header>
+<section class="row2">
+  <div class="uploadDiv">
+      <form  action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" name="filename" id="actual-btn" hidden>
+          <label for="actual-btn">Choose</label>
+          <input type="submit" value="upload" class="choose">
+      </form>
+  </div>
+  <div class="container">
+      <div class="heading">Video Gallery</div>
+      <div class="video-container">
+          <% if(typeof im != "undefined" && im) {  %>
+            <% for(var i=0; i<im.length; i++) {%>
+              <div class="video">
+                  <!-- <% var scale_text = im[i]; %> -->
+                    <video src="image/<%= im[i] %>" controls="controls" loop="loop" ></video>
+                  <!-- <img src="image/<%= im[i] %>"> -->
+                  <!-- <p><%= im[i]%></p>  -->
+              </div>  
+          <% } %>
+          <%} %>    
+      </div>
+  </div>
+</section>
+</body>
+<script type = "text/javascript">
+  window.addEventListener('scroll', function(){
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
